@@ -1,0 +1,11 @@
+{
+  "name": "sample-plugin",
+  "version": "0.1.0",
+  "description": "A mockup plugin for tests",
+  "main": "./sample-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0"
+}
