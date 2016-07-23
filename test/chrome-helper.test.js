@@ -1,8 +1,8 @@
 import chai from 'chai';
 import Chrome from 'chrome-remote-interface';
-import ChromeHelper from "../src/chrome-helper";
 import Topmarks from "topmarks";
 
+let ChromeHelper = require(`../${require('../package.json').main}`);
 chai.should();
 
 describe('ChromeHelper', () => {
