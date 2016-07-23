@@ -2,7 +2,7 @@
   "name": "chrome-helper",
   "version": "0.1.0",
   "description": "A helper class for cyrus-and/chrome-remote-interface",
-  "main": "chrome-helper.js",
+  "main": "lib/chrome-helper.js",
   "scripts": {
     "compile": "babel --presets es2015 --plugins add-module-exports -d lib/ src/",
     "compile-watch": "babel --watch --presets es2015 --plugins add-module-exports -d lib/ src/",
