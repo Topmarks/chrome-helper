@@ -38,6 +38,20 @@ describe('ChromeHelper', () => {
         done();
       });
   });
+  it('should close all the tabs', function(done) {
+    this.timeout(20000)
+    let chromeHelper = new ChromeHelper(9222,"about:blank");
+    chromeHelper.startupChrome()
+      .then(() => chromeHelper.startupChrome())
+      .then(() => chromeHelper.startupChrome())
+      .then(() => Chrome.List())
+      .then((tabList) => tabList.length.should.be.above(0))
+      .then(() => chromeHelper.closeAllTabs())
+      .then(() => Chrome.List())
+      .then((tabList) => tabList.length.should.equal(0))
+      .then(() => done())
+      .catch(console.log);
+  });
   describe('demo', () => {
     it('should work as described in the readme', function(done) {
       this.timeout(20000)

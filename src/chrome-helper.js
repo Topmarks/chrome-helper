@@ -25,18 +25,25 @@ export default class ChromeHelper {
       return results;
     })
   }
-  shutdownChrome() {
-    return Chrome.Close({port: this.port, id: this.tab.id}).then(delay);
+  shutdownChrome(tab) {
+    tab = (!tab || !tab.hasOwnProperty('id'))? this.tab: tab;
+    return Chrome.Close({port: this.port, id: tab.id}).then(delay);
   }
   isTabOpen(tab) {
-    if (!tab || !tab.hasOwnProperty('id')) {
-      tab = this.tab;
-    }
+    tab = (!tab || !tab.hasOwnProperty('id'))? this.tab: tab;
     return Chrome.List({port:9222}).then((tabsList) => {
       let result = tabsList.findIndex((element) => {
         return (element.id === tab.id);
       });
       return (result > -1);
     });
+  }
+  closeAllTabs() {
+    return Chrome.List({port: this.port})
+      .then((tabList) => {
+        return tabList.reduce((previousTab, currentTab, currentIndex, tabArray) => {
+          return this.shutdownChrome(currentTab);
+        }, Promise.resolve());
+      })
   }
 }
