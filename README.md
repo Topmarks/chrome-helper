@@ -1,10 +1,10 @@
 # ChromeHelper
 
-[![Build Status](https://travis-ci.org/Topmarks/chrome-helper.svg?branch=master)](https://travis-ci.org/Topmarks/chrome-helper) [![Coverage Status](https://coveralls.io/repos/github/Topmarks/chrome-helper/badge.svg?branch=master)](https://coveralls.io/github/Topmarks/chrome-helper?branch=master) [![npm version](https://badge.fury.io/js/chrome-helper.svg)](https://badge.fury.io/js/chrome-helper)
+[![Build Status](https://travis-ci.org/Topmarks/chrome-helper.svg?branch=master)](https://travis-ci.org/Topmarks/chrome-helper) [![Code Climate](https://codeclimate.com/github/Topmarks/chrome-helper/badges/gpa.svg)](https://codeclimate.com/github/Topmarks/chrome-helper) [![Test Coverage](https://codeclimate.com/github/Topmarks/chrome-helper/badges/coverage.svg)](https://codeclimate.com/github/Topmarks/chrome-helper/coverage) [![Issue Count](https://codeclimate.com/github/Topmarks/chrome-helper/badges/issue_count.svg)](https://codeclimate.com/github/Topmarks/chrome-helper) [![Dependency Status](https://david-dm.org/Topmarks/chrome-helper.svg)](https://david-dm.org/Topmarks/chrome-helper) [![Inline docs](http://inch-ci.org/github/Topmarks/chrome-helper.svg?branch=master)](http://inch-ci.org/github/Topmarks/chrome-helper) [![npm version](https://badge.fury.io/js/chrome-helper.svg)](https://badge.fury.io/js/chrome-helper)
 
 A helper class for [cyrus-and/chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface)
 
-Primarily designed to reduce repeated code in [Topmarks](http://github.com/topmarks/topmarks) plugins.
+Primarily designed to reduce repeated code in [Topmarks](http://github.com/Topmarks/chrome-helper) plugins.
 
 ## Usage
 
