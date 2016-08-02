@@ -1,6 +1,6 @@
 {
   "name": "chrome-helper",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A helper class for cyrus-and/chrome-remote-interface",
   "main": "lib/chrome-helper.js",
   "scripts": {
